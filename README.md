@@ -55,23 +55,17 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
 ![Root Link Desktop](https://wireframe.cc/6KympU)
 
 - Desktop Landing
 
 ![Car Details](https://wireframe.cc/Mkhv6F)
 
-- Desktop Hero
+- Details Car
 
 ![Sign-Up form](https://wireframe.cc/BUCT9N)
 
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
+- Form 
 
 ![Root Link Tablet](https://wireframe.cc/drQ6yh)
 
@@ -119,8 +113,6 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 ```
 
 #### Component Breakdown
-
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
