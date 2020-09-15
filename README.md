@@ -91,15 +91,30 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 ``` structure
 
-src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-|__ services/
+ src
+    ├── App.css
+    ├── App.js
+    ├── components
+    │   └── Header.jsx
+    ├── containers
+    │   └── MainContainer.jsx
+    ├── index.css
+    ├── index.js
+    ├── layouts
+    │   └── Layout.jsx
+    ├── screens
+    │   ├── Typess.jsx
+    │   ├── CarCreate.jsx
+    │   ├── CarDetail.jsx
+    │   ├── CarEdit.jsx
+    │   ├── Cars.jsx
+    │   ├── Login.jsx
+    │   └── Register.jsx
+    └── services
+        ├── api-config.js
+        ├── auth.js
+        ├── Types.js
+        └── Cars.js
 
 ```
 
