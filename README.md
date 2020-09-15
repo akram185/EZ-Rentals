@@ -152,7 +152,7 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+[ERD](https://drive.google.com/file/d/1JcOOvpUhPrp5pITmULZqLXhuyVXzpbId/view?usp=sharing)
 
 <br>
 
