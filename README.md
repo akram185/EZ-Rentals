@@ -32,12 +32,27 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 ### Goals
 
 - _Build users, cars, cars-types and types tables with associations,_
-- _._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
+- _User should be able to view all the car rental options and be able to select their desired car._
+- _Users should be able to edit or delete their preference.._
+- _Make home,nav,layout,header,footer,sign-up, login, information components._
+- _Use flexbox for presenting car cards on the home screen._
+- _Implement responsive designs which will support tablet screens and mobile screens._
 - _etc._
 
 <br>
+
+## Post MVP
+
+<br>
+
+### Goals
+
+- _Sign-up form validation,_
+- _Implement grid in nav._
+- _Add a favorites component which holds more than one car for user to come back and reserve._
+- _Make home,nav,layout,header,footer,sign-up, login, information components._
+- _Add search bar which can filter cars by price and narrow down the choices for user._
+- _etc._
 
 ### Libraries and Dependencies
 
