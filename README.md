@@ -27,8 +27,6 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 ## MVP
 
-<br>
-
 ### Goals
 
 - _Build users, cars, cars-types and types tables with associations,_
@@ -40,19 +38,6 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 - _etc._
 
 <br>
-
-## Post MVP
-
-<br>
-
-### Goals
-
-- _Sign-up form validation,_
-- _Implement grid in nav._
-- _Add a favorites component which holds more than one car for user to come back and reserve._
-- _Make home,nav,layout,header,footer,sign-up, login, information components._
-- _Add search bar which can filter cars by price and narrow down the choices for user._
-- _etc._
 
 ### Libraries and Dependencies
 
@@ -158,8 +143,12 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
+- _Sign-up form validation._
+- _Implement grid in nav._
+- _Add a favorites component which holds more than one car for user to come back and reserve._
+- _Make home,nav,layout,header,footer,sign-up, login, information components._
+- _Add search bar which can filter cars by price and narrow down the choices for user._
+- _etc._
 ***
 
 ## Code Showcase
