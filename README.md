@@ -41,8 +41,6 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
@@ -111,11 +109,13 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
+|    Layout    | functional |   n   |   n   | _The layout will wrap the app._                                  |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 |  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Sign-up   | functional |   n   |   n   | _The Sign-up contains form for user._                            |
+|    Home      |   class    |   y   |   n   | _The Home will render the posts using cards in flexbox._         |
+|  Car Card    | functional |   n   |   y   | _The cards will render the car info via props._                  |
+|    Footer    | functional |   n   |   n   | _The footer will show info about EZ-Rentals and copyright._      |
 
 #### Time Estimates
 
@@ -123,9 +123,14 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| App Skeleton     |    L    |     2 hrs      |     0 hrs     |    0 hrs    |
+| Backend CRUD/Structure    |    H    |     8 hrs      |     0 hrs     |    0 hrs    |
+| Create CRUD Actions in Frontend |    H     |     8 hrs      |     0 hrs     |     0 hrs     |
+| Sign-up/Login form |    H     |     8 hrs      |     0 hrs     |     0 hrs     |
+|Styling |    H     |     12 hrs      |     0 hrs     |     0 hrs     |
+| Responsive Design |    H     |     6 hrs      |     0 hrs     |     0 hrs     |
+| Project debugging and deployment  |    H    |     5 hrs      |     0 hrs     |     0 hrs     |
+| TOTAL               |          |     49 hrs      |     0 hrs     |     0 hrs     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
