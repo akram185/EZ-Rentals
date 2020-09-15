@@ -46,8 +46,8 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
 | React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Rails      | _Lorem ipsum dolor sit amet, consectetur._ |
+|  Cors  | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
 
@@ -57,15 +57,15 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+![Root Link Desktop](https://wireframe.cc/6KympU)
 
 - Desktop Landing
 
-![Dummy Link](url)
+![Car Details](https://wireframe.cc/Mkhv6F)
 
 - Desktop Hero
 
-![Dummy Link](url)
+![Sign-Up form](https://wireframe.cc/BUCT9N)
 
 - Resource Index
 
@@ -73,11 +73,11 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 - Resource Show
 
-![Dummy Link](url)
+![Root Link Tablet](https://wireframe.cc/drQ6yh)
 
 - Tablet Resource Index
 
-![Dummy Link](url)
+![Root Link Mobile](https://wireframe.cc/FJNH9J)
 
 - Mobile Resource Index
 
