@@ -119,8 +119,6 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | App Skeleton     |    L    |     2 hrs      |     0 hrs     |    0 hrs    |
@@ -132,7 +130,6 @@ src
 | Project debugging and deployment  |    H    |     5 hrs      |     0 hrs     |     0 hrs     |
 | TOTAL               |          |     49 hrs      |     0 hrs     |     0 hrs     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
