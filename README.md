@@ -22,7 +22,6 @@
 
 _**EZ Rentals** is a site where user can explore the cars available to rent. User will be provided with car types and models in card format on the homepage and when clicked on the cards user can find more information and pricing about the car on its detail page. Once user selects the desired car, user can sign-up with EZ Rentals to reserve the car._
 
-
 <br>
 
 ## MVP
@@ -43,11 +42,11 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Rails      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Cors  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | React handles functional front-end._ |
+|   React Router   | React Router will route users to different screens for better UX._ |
+|    Ruby on Rails    | Ruby on Rails is the framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC)._ |
+|  Formik  | Formik is a in built library which can handle forms._ |
+|  Bootstrap  | Bootstrap is really clean to style cards._ |
 
 <br>
 
@@ -77,11 +76,9 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+![Whimsical](https://whimsical.com/8MqvLQRWvZD9T64NhHwUvR)
 
 #### Component Hierarchy
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
