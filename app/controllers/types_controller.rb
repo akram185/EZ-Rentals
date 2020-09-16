@@ -7,6 +7,15 @@ class TypesController < ApplicationController
 
     render json: @types
   end
+
+  def add_type_to_car
+    @car = Car.find(params[:car_id])
+    @type = Type.find(params[:id])
+
+    @car.types.push(@type)
+
+    render json: @car, include: :types
+  end
 end
 
 #   # GET /types/1

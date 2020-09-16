@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Car.destroy_all
+Type.destroy_all
+User.destroy_all
+
+admin = User.create!(username: 'admin', email: 'admin@gmail.com', password: '123456')
+
+puts "#{User.count} users created"
+
+small = Type.create!(model: 'small')
+medium = Type.create!(model: 'medium')
+large = Type.create!(model: 'large')
+suv = Type.create!(model: 'suv')
+
+puts "#{Type.count} types created"
+
+nissan = Car.create!(make: "nissan", user: admin)
+
+puts "#{Car.count} cars created"
+
+nissan.types << small
+nissan.types.push(medium, large)
