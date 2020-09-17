@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Login() {
+export default function Login(props) {
   const [formData, setFormData] = useState({
     username: '',
     password: '',
@@ -10,14 +10,19 @@ export default function Login() {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }))
   }
 
   return (
-    <form>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault()
+        props.loginSubmit(formData)
+      }}
+    >
       <h3>Login</h3>
       <label>
         Username:
