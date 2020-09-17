@@ -2,12 +2,18 @@ import React, { useEffect, useState } from 'react'
 import { Switch, Route, useHistory } from 'react-router-dom'
 
 import './App.css'
+import MainContainer from './containers/MainContainer'
 
 import Layout from './layouts/Layout'
 import Login from './screens/Login'
 import Register from './screens/Register'
 
-import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
+import {
+  loginUser,
+  registerUser,
+  removeToken,
+  verifyUser,
+} from './services/auth'
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
@@ -42,24 +48,18 @@ function App() {
   }
 
   return (
-    <Layout
-      currentUser={currentUser}
-      handleLogout={handleLogout}
-    >
+    <Layout currentUser={currentUser} handleLogout={handleLogout}>
       <Switch>
-
         <Route path='/login'>
-          <Login
-            loginSubmit={loginSubmit}
-          />
+          <Login loginSubmit={loginSubmit} />
         </Route>
 
         <Route path='/register'>
-          <Register
-            registerSubmit={registerSubmit}
-          />
+          <Register registerSubmit={registerSubmit} />
         </Route>
 
+        <Route path='/' component={MainContainer}>
+        </Route>
       </Switch>
     </Layout>
   )
