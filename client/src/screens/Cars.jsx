@@ -6,7 +6,9 @@ export default function Cars(props) {
     <div>
       {props.cars.map((car) => (
         <React.Fragment key={car.id}>
-          <p>{car.make}</p>
+          <Link to={`/cars/${car.id}`}>
+            <p>{car.make}</p>
+          </Link>
           <Link to={`/cars/${car.id}/edit`}>
             <button>Edit</button>
           </Link>

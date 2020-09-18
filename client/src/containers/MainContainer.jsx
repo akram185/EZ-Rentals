@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Route, Switch, useHistory } from 'react-router-dom'
+import CarDetail from '../screens/CarDetail'
 import CarEdit from '../screens/CarEdit'
 import Cars from '../screens/Cars'
 import Types from '../screens/Types'
@@ -36,6 +37,9 @@ export default function MainContainer() {
     <Switch>
       <Route path='/cars/:id/edit'>
         <CarEdit cars={cars} updateSubmit={updateSubmit} />
+      </Route>
+      <Route path='/cars/:id'>
+        <CarDetail types={types} />
       </Route>
       <Route path='/types'>
         <Types types={types} />
