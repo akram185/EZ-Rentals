@@ -7,10 +7,13 @@ import Cars from '../screens/Cars'
 import Types from '../screens/Types'
 import { deleteCar, getAllCars, postCar, putCar } from '../services/cars'
 import { getAllTypes } from '../services/types'
+import Vehicles from '../screens/Vehicles'
+import { getAllVehicles } from '../services/vehicles'
 
 export default function MainContainer(props) {
   const [types, setTypes] = useState([])
   const [cars, setCars] = useState([])
+  const [vehicles, setVehicles] = useState([])
   const history = useHistory()
   const { currentUser } = props
 
@@ -23,8 +26,13 @@ export default function MainContainer(props) {
       const carArray = await getAllCars()
       setCars(carArray)
     }
+    const fetchVehicles = async () => {
+      const vehicleArray = await getAllVehicles()
+      setVehicles(vehicleArray)
+    }
     fetchTypes()
     fetchCars()
+    fetchVehicles()
   }, [])
 
   const updateSubmit = async (id, formData) => {
@@ -48,18 +56,26 @@ export default function MainContainer(props) {
 
   return (
     <Switch>
+      <Route exact path='/'>
+        <Vehicles vehicles={vehicles} />
+      </Route>
+
       <Route path='/cars/new'>
         <CarCreate createSubmit={createSubmit} />
       </Route>
+
       <Route path='/cars/:id/edit'>
         <CarEdit cars={cars} updateSubmit={updateSubmit} />
       </Route>
+
       <Route path='/cars/:id'>
         <CarDetail types={types} />
       </Route>
+
       <Route path='/types'>
         <Types types={types} />
       </Route>
+
       <Route path='/cars'>
         <Cars
           cars={cars}
