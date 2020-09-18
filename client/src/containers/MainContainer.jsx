@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, useHistory } from 'react-router-dom'
 import CarEdit from '../screens/CarEdit'
 import Cars from '../screens/Cars'
 import Types from '../screens/Types'
-import { getAllCars } from '../services/cars'
+import { getAllCars, putCar } from '../services/cars'
 import { getAllTypes } from '../services/types'
 
 export default function MainContainer() {
   const [types, setTypes] = useState([])
   const [cars, setCars] = useState([])
+  const history = useHistory()
 
   useEffect(() => {
     const fetchTypes = async () => {
@@ -23,10 +24,18 @@ export default function MainContainer() {
     fetchCars()
   }, [])
 
+  const updateSubmit = async (id, formData) => {
+    const updatedCar = await putCar(id, formData)
+    setCars((prevState) =>
+      prevState.map((car) => (car.id === Number(id) ? updatedCar : car))
+    )
+    history.push('/cars')
+  }
+
   return (
     <Switch>
       <Route path='/cars/:id/edit'>
-        <CarEdit cars={cars} />
+        <CarEdit cars={cars} updateSubmit={updateSubmit} />
       </Route>
       <Route path='/types'>
         <Types types={types} />

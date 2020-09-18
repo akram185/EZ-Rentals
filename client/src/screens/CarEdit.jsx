@@ -8,7 +8,7 @@ export default function CarEdit(props) {
   })
   const { make } = formData
   const { id } = useParams()
-  const { cars } = props
+  const { cars, updateSubmit } = props
 
   useEffect(() => {
     const prefilForm = () => {
@@ -27,7 +27,10 @@ export default function CarEdit(props) {
     setFormData({ make: value })
   }
   return (
-    <form>
+    <form onSubmit={(e) => {
+      e.preventDefault()
+      updateSubmit(id, formData)
+    }}>
       <h3>Edit Car</h3>
       <label>
         Make:
