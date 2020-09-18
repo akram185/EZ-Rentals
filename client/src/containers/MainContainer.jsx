@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import CarEdit from '../screens/CarEdit'
 import Cars from '../screens/Cars'
 import Types from '../screens/Types'
 import { getAllCars } from '../services/cars'
@@ -24,15 +25,14 @@ export default function MainContainer() {
 
   return (
     <Switch>
+      <Route path='/cars/:id/edit'>
+        <CarEdit cars={cars} />
+      </Route>
       <Route path='/types'>
-        <Types
-          types={types}
-        />
+        <Types types={types} />
       </Route>
       <Route path='/cars'>
-        <Cars
-          cars={cars}
-        />
+        <Cars cars={cars} />
       </Route>
     </Switch>
   )
