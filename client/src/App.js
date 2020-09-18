@@ -58,7 +58,8 @@ function App() {
           <Register registerSubmit={registerSubmit} />
         </Route>
 
-        <Route path='/' component={MainContainer}>
+        <Route path='/'>
+          <MainContainer currentUser={currentUser} />
         </Route>
       </Switch>
     </Layout>
