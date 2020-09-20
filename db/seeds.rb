@@ -36,8 +36,10 @@ nissan.types.push(medium, large)
   Vehicle.create(
     name: Faker::Vehicle.make_and_model,
     description: Faker::Vehicle.standard_specs,
-    # user: User.find(1)
-    imageURL: Faker::LoremPixel.image
+    information: Faker::Vehicle.standard_specs,
+    # imageURL: Faker::LoremPixel.image(category: 'vehicles')
+    imageURL: Faker::LoremFlickr.image(search_terms: ['vehicles'])
+    # imageURL: Faker::LoremPixel.image 
   )
 end
 puts "#{Vehicle.count} vehicles created"

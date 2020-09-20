@@ -9,6 +9,7 @@ import { deleteCar, getAllCars, postCar, putCar } from '../services/cars'
 import { getAllTypes } from '../services/types'
 import Vehicles from '../screens/Vehicles'
 import { getAllVehicles } from '../services/vehicles'
+import VehicleDetail from '../screens/VehicleDetail'
 
 export default function MainContainer(props) {
   const [types, setTypes] = useState([])
@@ -58,6 +59,9 @@ export default function MainContainer(props) {
     <Switch>
       <Route exact path='/'>
         <Vehicles vehicles={vehicles} />
+      </Route>
+      <Route path='/vehicles/:id'>
+        <VehicleDetail />
       </Route>
 
       <Route path='/cars/new'>
