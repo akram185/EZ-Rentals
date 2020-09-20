@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :vehicles
   resources :types, only: :index
   resources :cars
   post '/auth/login', to: 'authentication#login'

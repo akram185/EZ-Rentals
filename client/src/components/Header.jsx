@@ -5,7 +5,7 @@ export default function Header(props) {
   const { currentUser } = props
   return (
     <header>
-      <h1>EZ Rentals</h1>
+      <Link to='/' ><h1>EZ Rentals</h1></Link>
       {currentUser ? (
         <div>
           <p>{currentUser.username}</p>

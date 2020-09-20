@@ -2,15 +2,16 @@ import React, { useState } from 'react'
 
 export default function CarCreate(props) {
   const [formData, setFormData] = useState({
-    make: ""
+    make: "",
+    imageURL: ""
   })
-  const { make } = formData
+  const { make, imageURL } = formData
   const { createSubmit } = props
 
 
   const handleChange = (e) => {
     const { value } = e.target
-    setFormData({ make: value })
+    setFormData({ make: value, imageURL: value })
   }
   return (
     <form onSubmit={(e) => {
@@ -21,6 +22,10 @@ export default function CarCreate(props) {
       <label>
         Make:
         <input type='text' value={make} onChange={handleChange} />
+      </label>
+      <label>
+        Image Address:
+        <input type='text' value={imageURL} onChange={handleChange} />
       </label>
 
       <button>Submit</button>
