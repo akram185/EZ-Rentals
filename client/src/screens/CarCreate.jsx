@@ -42,13 +42,13 @@ import React, { useState } from 'react'
 //   )
 // }
 
-
 export default function CarCreate(props) {
   const [formData, setFormData] = useState({
     make: '',
     imageURL: '',
+    description: '',
   })
-  const { make, imageURL } = formData
+  const { make, imageURL, description } = formData
   const { createSubmit } = props
 
   const handleChange = (e) => {
@@ -79,7 +79,15 @@ export default function CarCreate(props) {
           onChange={handleChange}
         />
       </label>
-
+      <label>
+        Description:
+        <input
+          type='text'
+          name='description'
+          value={description}
+          onChange={handleChange}
+        />
+      </label>
       <button>Submit</button>
     </form>
   )

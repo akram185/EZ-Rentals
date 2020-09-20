@@ -10,9 +10,9 @@ export default function Cars(props) {
         <React.Fragment key={car.id}>
           <Link to={`/cars/${car.id}`}>
             <p>{car.make}</p>
-            <img src={car.imageURL} />
           </Link>
-
+          <img src={car.imageURL} />
+          <p>{car.description}</p>
           {currentUser && currentUser.id === car.user_id && (
             <>
               <Link to={`/cars/${car.id}/edit`}>
