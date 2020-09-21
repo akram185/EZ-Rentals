@@ -12,6 +12,7 @@ export default function Cars(props) {
             <p>{car.make}</p>
           </Link>
           <img src={car.imageURL} />
+          <p>{car.description}</p>
           {currentUser && currentUser.id === car.user_id && (
             <>
               <Link to={`/cars/${car.id}/edit`}>

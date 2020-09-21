@@ -1,0 +1,30 @@
+.logo {
+  font-size: xx-large;
+  color: #1c7a96;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.ez, a {
+  text-decoration: none !important;
+}
+
+.login-register {
+  position: absolute;
+  text-align: right;
+  margin-right: 10%;
+  top: 3.5%;
+  right: 2%;
+}
+/* header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+} */
+.login{
+  
+}
+header {
+  box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.253) !important;
+  padding: 2px;
+}
