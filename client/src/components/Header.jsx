@@ -16,14 +16,24 @@ export default function Header(props) {
         </div>
       ) : (
         <div className='login-register'>
-            <Link className='login' to='/login'>Login</Link>
-            <Link className='register' to='/register'>Register</Link>
+          <button className='login'>
+            <Link className='login' to='/login'>
+              Login
+            </Link>
+          </button>
+          <button>
+            <Link className='register' to='/register'>
+              Register
+            </Link>
+          </button>
         </div>
       )}
       {currentUser && (
         <>
-          <Link to='/cars'>Cars</Link>
-          <Link to='/types'>Types</Link>
+          <Link to='/cars'>My Cars</Link>
+          <Link className='types' to='/types'>
+            Types
+          </Link>
         </>
       )}
     </header>

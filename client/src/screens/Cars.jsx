@@ -5,12 +5,11 @@ export default function Cars(props) {
   const { currentUser, cars, handleDelete } = props
   return (
     <div>
-      <h3>Cars</h3>
+      <h3>My Cars</h3>
       {props.cars.map((car) => (
         <React.Fragment key={car.id}>
-          <Link to={`/cars/${car.id}`}>
-            <p>{car.make}</p>
-          </Link>
+          <p>{car.make}</p>
+
           <img src={car.imageURL} />
           <p>{car.description}</p>
           {currentUser && currentUser.id === car.user_id && (

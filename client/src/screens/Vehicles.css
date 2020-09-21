@@ -2,7 +2,7 @@
 .container{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 8%;
+  padding-left: 12%;
   margin-top: 5%;
 }
 .card-img{
