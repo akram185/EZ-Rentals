@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -55,6 +56,15 @@ export default function Register(props) {
           onChange={handleChange}
         />
         <button className='submit-btn'>Submit</button>
+      </div>
+      <br />
+      <div className='register-login'>
+        <p className='no-acc'>Already have an account?</p>
+        <button className='register-btn-form'>
+          <Link className='a-btn' to='/login'>
+            Sign Up
+          </Link>
+        </button>
       </div>
     </form>
   )
