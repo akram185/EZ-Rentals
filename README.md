@@ -1,5 +1,4 @@
 # EZ-Rentals
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)
@@ -20,7 +19,7 @@
 
 ## Overview
 
-_**EZ Rentals** is a site where user can explore the cars available to rent. User will be provided with car types and models in card format on the homepage and when clicked on the cards user can find more information and pricing about the car on its detail page. Once user selects the desired car, user can sign-up with EZ Rentals to reserve the car._
+_**EZ Rentals** is a site where user can explore the cars available to rent. User will be provided with car types and models in card format on the homepage and when clicked on the cards user can find more information and pricing about the car on its detail page. User can also sign-up with EZ Rentals to add the car to their my cars list and or can edit or delete the list._
 
 <br>
 
@@ -28,8 +27,8 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 ### Goals
 
-- _Build users, cars, cars-types and types tables with associations,_
-- _User should be able to view all the car rental options and be able to select their desired car._
+- _Build users, cars, cars-types, vehicles and types tables with associations,_
+- _User should be able to view all the car options and be able to select their desired car._
 - _Users should be able to edit or delete their preference.._
 - _Make home,nav,layout,header,footer,sign-up, login, information components._
 - _Use flexbox for presenting car cards on the home screen._
@@ -117,7 +116,7 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 |  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
 |    Sign-up   | functional |   n   |   n   | _The Sign-up contains form for user._                            |
-|    Home      |   class    |   y   |   n   | _The Home will render the posts using cards in flexbox._         |
+|    Home      | functional |   n   |   n   | _The Home will render the posts using cards in flexbox._         |
 |  Car Card    | functional |   n   |   y   | _The cards will render the car info via props._                  |
 |    Footer    | functional |   n   |   n   | _The footer will show info about EZ-Rentals and copyright._      |
 
@@ -125,14 +124,14 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| App Skeleton     |    L    |     2 hrs      |     0 hrs     |    0 hrs    |
-| Backend CRUD/Structure    |    H    |     8 hrs      |     0 hrs     |    0 hrs    |
-| Create CRUD Actions in Frontend |    H     |     8 hrs      |     0 hrs     |     0 hrs     |
-| Sign-up/Login form |    H     |     8 hrs      |     0 hrs     |     0 hrs     |
-|Styling |    H     |     12 hrs      |     0 hrs     |     0 hrs     |
-| Responsive Design |    H     |     6 hrs      |     0 hrs     |     0 hrs     |
-| Project debugging and deployment  |    H    |     5 hrs      |     0 hrs     |     0 hrs     |
-| TOTAL               |          |     49 hrs      |     0 hrs     |     0 hrs     |
+| App Skeleton     |    L    |     2 hrs      |     6 hrs     |    6 hrs    |
+| Backend CRUD/Structure    |    H    |     8 hrs      |     12 hrs     |    12 hrs    |
+| Create CRUD Actions in Frontend |    H     |     8 hrs      |     10 hrs     |     10 hrs     |
+| Sign-up/Login form |    H     |     8 hrs      |     12 hrs     |     12 hrs     |
+|Styling |    H     |     12 hrs      |     8 hrs     |     8 hrs     |
+| Responsive Design |    H     |     6 hrs      |     4 hrs     |     4 hrs     |
+| Project debugging and deployment  |    H    |     5 hrs      |     2 hrs     |     2 hrs     |
+| TOTAL               |          |     49 hrs      |     54 hrs     |     54 hrs     |
 
 
 <br>
@@ -164,4 +163,3 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 ## Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution.
-test
