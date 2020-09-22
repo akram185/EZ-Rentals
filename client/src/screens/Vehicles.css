@@ -1,14 +1,12 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  /* padding-left: 10%; */
   margin-top: 5%;
   margin-left: 5%;
 }
 .container-cars {
   display: flex;
   flex-wrap: wrap;
-  /* padding-left: 10%; */
   margin-top: 5%;
   margin-left: 15%;
 }
@@ -32,12 +30,7 @@
 .card-cars {
   width: 30%;
   height: 270px;
-  /* box-shadow: 0px 0px 5px 0px #1c7a96 !important; */
-  /* height: 50rem; */
   margin-bottom: 5%;
-  /* margin-right: 5%; */
-  /* flex-direction: row; */
-  /* margin-right: 10%; */
 }
 .card-title {
   font-size: 20px;
@@ -276,5 +269,13 @@ footer {
 
   .card-vehicles {
     width: 100%;
+  }
+  .card-cars {
+    width: 100%;
+    margin-left: 20%;
+  }
+  .edit-car,
+  .delete-car {
+    font-size: 10px;
   }
 }
