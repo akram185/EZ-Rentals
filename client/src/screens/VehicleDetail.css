@@ -1,11 +1,7 @@
 .detail-container {
-  /* display: flex;
-  width: 50%;
-  flex-wrap: wrap; */
   margin-left: 15%;
   width: 50%;
   margin-top: 7%;
-  /* text-align: center; */
 }
 
 .detail-img {
@@ -28,4 +24,19 @@
 .detail-title {
   margin-left: 50%;
   color: #1c7a96;
+}
+
+@media screen and (max-width: 426px) {
+  .detail-img {
+    width: 100%;
+  }
+  .detail-info {
+    font-size: 15px;
+    top: 45%;
+    left: -8%;
+    width: 60%;
+  }
+  .detail-title {
+    font-size: 25px;
+  }
 }
