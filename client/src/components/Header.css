@@ -5,7 +5,8 @@
   padding-left: 10%;
 }
 
-.ez, a {
+.ez,
+a {
   text-decoration: none !important;
 }
 
@@ -15,19 +16,33 @@
   margin-right: 10%;
   top: 3.5%;
   right: 2%;
+  display: flex;
 }
 /* header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 } */
-.login{margin-right: 5px;
+
+/* .register-btn {
+  position: absolute;
+}
+.login-btn {
+  position: absolute;
+} */
+.login-btn,
+.register-btn {
+  margin-right: 25px;
+  width: 120% !important;
+  font-size: 120%;
+  /* padding-left: 51%; */
+  padding: 5%;
 }
 header {
   box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.253) !important;
   padding: 2px;
 }
 
-.types{
+.types {
   display: none;
 }

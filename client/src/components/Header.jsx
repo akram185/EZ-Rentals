@@ -16,13 +16,13 @@ export default function Header(props) {
         </div>
       ) : (
         <div className='login-register'>
-          <button className='login'>
-            <Link className='login' to='/login'>
+          <button className='login-btn'>
+            <Link className='a-btn' to='/login'>
               Login
             </Link>
           </button>
-          <button>
-            <Link className='register' to='/register'>
+          <button className='register-btn'>
+            <Link className='a-btn' to='/register'>
               Register
             </Link>
           </button>
