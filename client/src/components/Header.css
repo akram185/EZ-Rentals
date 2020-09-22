@@ -89,7 +89,7 @@ a {
   /* padding: 5%; */
 }
 header {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.253) !important;
+  box-shadow: 0px 0px 5px 0px #1c7a96 !important;
   padding: 2px;
   height: 0%;
 }

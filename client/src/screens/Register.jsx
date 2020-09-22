@@ -25,7 +25,7 @@ export default function Register(props) {
         props.registerSubmit(formData)
       }}
     >
-      <p className='login-title'>Register</p>
+      <p className='login-title'>REGISTER</p>
       <div className='login-input'>
         <input
           className='input-username'
