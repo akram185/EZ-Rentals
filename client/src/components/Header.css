@@ -1,0 +1,68 @@
+.logo {
+  font-size: xx-large;
+  color: #1c7a96;
+  text-align: left;
+  padding-left: 10%;
+}
+.welcome {
+  font-size: 25px;
+  color: #1c7a96;
+  text-align: right;
+}
+.my-cars {
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+.ez,
+a {
+  text-decoration: none !important;
+}
+
+.login-register {
+  position: absolute;
+  text-align: right;
+  margin-right: 10%;
+  top: 3.5%;
+  right: 2%;
+  display: flex;
+}
+/* header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+} */
+
+/* .register-btn {
+  position: absolute;
+}
+.login-btn {
+  position: absolute;
+} */
+.login-btn,
+.register-btn {
+  margin-right: 25px;
+  width: 120% !important;
+  font-size: 120%;
+  /* padding-left: 51%; */
+  padding: 5%;
+}
+.logout-btn {
+  position: absolute;
+  top: 10%;
+  right: 1%;
+  margin-right: 25px;
+  /* width: 120% !important; */
+  font-size: 120%;
+  /* padding-left: 51%; */
+  /* padding: 5%; */
+}
+header {
+  box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.253) !important;
+  padding: 2px;
+  height: 0%;
+}
+
+.types {
+  display: none;
+}
