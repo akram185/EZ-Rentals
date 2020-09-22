@@ -268,3 +268,13 @@ footer {
     margin-left: 28%;
   }
 } */
+@media screen and (max-width: 426px) {
+  .root,
+  .app {
+    width: 100vw;
+  }
+
+  .card-vehicles {
+    width: 100%;
+  }
+}
