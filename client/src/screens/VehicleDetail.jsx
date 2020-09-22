@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getOneVehicle } from '../services/vehicles'
+import './VehicleDetail.css'
 
 export default function VehicleDetail(props) {
   const [vehicle, setVehicle] = useState(null)
@@ -14,14 +15,14 @@ export default function VehicleDetail(props) {
     }
     fetchVehicle()
   }, [])
-console.log(vehicle);
+
   return (
-    <div>
+    <div className='detail-container'>
       {vehicle && (
         <>
-          <h3>{vehicle.name}</h3>
-          <p>{vehicle.information}</p>
-          <img src={vehicle.imageURL} />
+          <h1 className='detail-title'>{vehicle.name}</h1>
+          <p className='detail-info'>{vehicle.information}</p>
+          <img className='detail-img' src={vehicle.imageURL} />
         </>
       )}
     </div>

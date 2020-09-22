@@ -41,11 +41,11 @@ export default function Vehicles(props) {
       <div className='container'>
         {/* <h1>All Vehicles</h1> */}
         {props.vehicles.map((vehicle) => (
-          <div className='card'>
+          <div className='card-vehicles'>
             <p className='card-title'>{vehicle.name}</p>
             <img className='card-img' src={vehicle.imageURL} />
             <Link to={`/vehicles/${vehicle.id}`}>
-              <p>More Info</p>
+              <p className='more-info'>More Info</p>
             </Link>
           </div>
         ))}

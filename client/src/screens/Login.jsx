@@ -25,7 +25,7 @@ export default function Login(props) {
         props.loginSubmit(formData)
       }}
     >
-      <p className='login-title'>Login</p>
+      <p className='login-title'>LOGIN</p>
       <div className='login-input'>
         <input
           className='input-username'

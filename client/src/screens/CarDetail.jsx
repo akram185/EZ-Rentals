@@ -28,7 +28,7 @@ export default function CarDetail(props) {
   }
 
   return (
-    <div>
+    <div className='container-detail'>
       {car && (
         <>
           <h3>{car.make}</h3>
