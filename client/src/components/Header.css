@@ -118,8 +118,19 @@ header {
 
 @media screen and (max-width: 1024px) {
   .login-register {
-  
     top: 2% !important;
     right: 1%;
+  }
+  .add-car {
+    top: 4%;
+    right: 35%;
+  }
+
+  .my-cars {
+    top: 4%;
+    right: 55%;
+  }
+  .logout-btn {
+    top: 4%;
   }
 }

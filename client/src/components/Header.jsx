@@ -15,7 +15,7 @@ export default function Header(props) {
           <button className='logout-btn' onClick={props.handleLogout}>
             logout
           </button>
-          <p className='welcome'>Welcome {currentUser.username}`</p>
+          <p className='welcome'>Welcome {currentUser.username}</p>
         </div>
       ) : (
         <div className='login-register'>

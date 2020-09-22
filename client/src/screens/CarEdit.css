@@ -21,3 +21,19 @@
   font-size: 20px;
   margin-left: 12%;
 }
+
+@media screen and (max-width: 1024px) {
+  .input-make{
+    margin-left: 17%;
+  }
+  .input-image{
+    margin-left: 16%;
+  }
+  .input-description{
+    margin-left: 5%;
+  }
+  .edit-form{
+    width: 50%;
+    margin-left: 25%;
+  }
+}
