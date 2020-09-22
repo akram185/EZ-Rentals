@@ -95,7 +95,6 @@ export default function CarCreate(props) {
           value={description}
           onChange={handleChange}
         />
-
         <button className='submit-btn'>Submit</button>
       </div>
     </form>

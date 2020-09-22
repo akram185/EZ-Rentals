@@ -1,0 +1,23 @@
+.edit-form {
+  width: 40%;
+  align-items: center !important;
+  text-align: center !important;
+  height: 664px !important;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.253) !important;
+  margin-left: 30%;
+  margin-top: 5%;
+  color: #1c7a96;
+}
+
+.input-make,
+.input-image {
+  height: 40px;
+  font-size: 20px;
+  margin-left: 21%;
+}
+
+.input-description {
+  height: 40px;
+  font-size: 20px;
+  margin-left: 12%;
+}

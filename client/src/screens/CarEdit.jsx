@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import { getOneCar } from '../services/cars'
+import './CarEdit.css'
 
 export default function CarEdit(props) {
   const [formData, setFormData] = useState({
@@ -37,36 +38,49 @@ export default function CarEdit(props) {
   }
   return (
     <form
+      className='edit-form'
       onSubmit={(e) => {
         e.preventDefault()
         updateSubmit(id, formData)
         history.push('/')
       }}
     >
-      <h3>Edit Car</h3>
-      <label>
-        Make:
-        <input type='text' name='make' value={make} onChange={handleChange} />
-      </label>
-      <label>
-        Image:
-        <input
-          type='text'
-          name='imageURL'
-          value={imageURL}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Description:
-        <input
-          type='text'
-          name='description'
-          value={description}
-          onChange={handleChange}
-        />
-      </label>
-      <button>Submit</button>
+      <p className='login-title'>Edit Car</p>
+      <div className='login-input'>
+        <label>
+          Make
+          <input
+            className='input-make'
+            type='text'
+            name='make'
+            value={make}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Image
+          <input
+            className='input-image'
+            type='text'
+            name='imageURL'
+            value={imageURL}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Description
+          <input
+            className='input-description'
+            type='text'
+            name='description'
+            value={description}
+            onChange={handleChange}
+          />
+        </label>
+        <button className='submit-btn'>Submit</button>
+      </div>
     </form>
   )
 }
