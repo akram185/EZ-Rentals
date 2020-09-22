@@ -33,6 +33,8 @@ export default function Header(props) {
       {currentUser && (
         <>
           <Link className='my-cars' to='/cars'>My Cars</Link>
+          <Link className='add-car' to='/cars/new'>Add Car</Link>
+
           <Link className='types' to='/types'>
             Types
           </Link>

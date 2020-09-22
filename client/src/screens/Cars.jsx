@@ -24,9 +24,9 @@ export default function Cars(props) {
         </React.Fragment>
       ))}
       <br />
-      <Link to='/cars/new'>
+      {/* <Link to='/cars/new'>
         <button>Create</button>
-      </Link>
+      </Link> */}
     </div>
   )
 }
