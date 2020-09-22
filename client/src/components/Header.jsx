@@ -9,6 +9,7 @@ export default function Header(props) {
       <Link className='ez' to='/'>
         <h1 className='logo'>EZ RENTALS</h1>
       </Link>
+
       {currentUser ? (
         <div className='welcome-logout'>
           <button className='logout-btn' onClick={props.handleLogout}>
@@ -32,12 +33,16 @@ export default function Header(props) {
       )}
       {currentUser && (
         <>
-          <Link className='my-cars' to='/cars'>My Cars</Link>
-          <Link className='add-car' to='/cars/new'>Add Car</Link>
-
           <Link className='types' to='/types'>
             Types
           </Link>
+          <Link className='my-cars' to='/cars'>
+            My Cars
+          </Link>
+          <Link className='add-car' to='/cars/new'>
+            Add A Car
+          </Link>
+          
         </>
       )}
     </header>
