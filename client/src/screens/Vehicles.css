@@ -285,4 +285,10 @@ footer {
     width: 30%;
     margin-left: 10%;
   }
+  .edit-car, .delete-car {
+    margin-left: -1%;
+  }
+  .edit-car{
+    margin-right: 3%;
+  }
 }
