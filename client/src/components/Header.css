@@ -115,3 +115,11 @@ header {
     right: 55%;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .login-register {
+  
+    top: 100% !important;
+
+  }
+}
