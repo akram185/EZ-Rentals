@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 export default function Cars(props) {
   const { currentUser, cars, handleDelete } = props
   return (
-    <div>
-      <h3>My Cars</h3>
+    <div className='container'>
+      {/* <h3>My Cars</h3> */}
       {props.cars.map((car) => (
         <React.Fragment key={car.id}>
-          <p>{car.make}</p>
+          <div className='card'></div>
+          <p className='card-title'>{car.make}</p>
 
-          <img src={car.imageURL} />
+          <img className='card-img' src={car.imageURL} />
           <p>{car.description}</p>
           {currentUser && currentUser.id === car.user_id && (
             <>

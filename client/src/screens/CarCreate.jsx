@@ -60,35 +60,44 @@ export default function CarCreate(props) {
   }
   return (
     <form
+      className='login-form'
       onSubmit={(e) => {
         e.preventDefault()
         createSubmit(formData)
       }}
     >
-      <h3>Create Car</h3>
-      <label>
-        Make:
-        <input type='text' name='make' value={make} onChange={handleChange} />
-      </label>
-      <label>
-        Image Address:
+      <p className='login-title'>Create Car</p>
+      <div className='login-input'>
         <input
+          className='input-username'
+          placeholder='Make'
+          type='text'
+          name='make'
+          value={make}
+          onChange={handleChange}
+        />
+        <br />
+
+        <input
+          className='input-username'
+          placeholder='Image Address'
           type='text'
           name='imageURL'
           value={imageURL}
           onChange={handleChange}
         />
-      </label>
-      <label>
-        Description:
+        <br />
         <input
+          className='input-username'
+          placeholder='Description'
           type='text'
           name='description'
           value={description}
           onChange={handleChange}
         />
-      </label>
-      <button>Submit</button>
+
+        <button className='submit-btn'>Submit</button>
+      </div>
     </form>
   )
 }
