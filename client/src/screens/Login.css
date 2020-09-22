@@ -56,7 +56,7 @@ height: 50%;
 }
 .register-btn-form {
   font-size: 15px;
-  padding: 10px;
+  padding: 5px;
 }
 .submit-btn {
   font-size: 20px;
@@ -82,4 +82,42 @@ height: 50%;
   /* position: absolute;
  height: 20%;
  width: 20%; */
+}
+
+@media screen and (max-width: 426px) {
+  .login-form,
+  .edit-form {
+    width: 75%;
+    height: 500px !important;
+    margin-left: 13% !important;
+  }
+  .login-title {
+    font-size: 15px;
+  }
+  .input-username,
+  .input-password,
+  .input-email,
+  .submit-btn,
+  .no-acc {
+    height: 20px;
+    font-size: 10px;
+  }
+  .a-btn {
+    font-size: 10px;
+  }
+  .input-description {
+    margin-left: 4%;
+  }
+  .input-make,
+  .input-image,
+  .input-description {
+    font-size: 7px;
+    height: 20px;
+  }
+  .input-make {
+    margin-left: 27%;
+  }
+  .input-image {
+    margin-left: 25%;
+  }
 }
