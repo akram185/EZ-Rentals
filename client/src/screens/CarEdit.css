@@ -23,16 +23,16 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .input-make{
+  .input-make {
     margin-left: 17%;
   }
-  .input-image{
+  .input-image {
     margin-left: 16%;
   }
-  .input-description{
+  .input-description {
     margin-left: 5%;
   }
-  .edit-form{
+  .edit-form {
     width: 50%;
     margin-left: 25%;
   }

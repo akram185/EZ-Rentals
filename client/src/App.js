@@ -23,7 +23,6 @@ function App() {
     const handleVerify = async () => {
       const userData = await verifyUser()
       setCurrentUser(userData)
-      // history.push('/')
     }
     handleVerify()
   }, [])

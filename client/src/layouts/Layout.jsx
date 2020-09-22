@@ -8,9 +8,7 @@ export default function Layout(props) {
         currentUser={props.currentUser}
         handleLogout={props.handleLogout}
       />
-      <main>{
-        props.children}
-      </main>
+      <main>{props.children}</main>
     </>
   )
 }

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
-import { getOneCar } from '../services/cars'
 import './CarEdit.css'
 
 export default function CarEdit(props) {

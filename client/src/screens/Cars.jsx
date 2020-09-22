@@ -5,7 +5,6 @@ export default function Cars(props) {
   const { currentUser, cars, handleDelete } = props
   return (
     <div className='container-cars'>
-      {/* <h3>My Cars</h3> */}
       {props.cars.map((car) => (
         <React.Fragment key={car.id}>
           <div className='card-cars'>
@@ -29,10 +28,6 @@ export default function Cars(props) {
           </div>
         </React.Fragment>
       ))}
-      <br />
-      {/* <Link to='/cars/new'>
-        <button>Create</button>
-      </Link> */}
     </div>
   )
 }

@@ -42,7 +42,6 @@ export default function Header(props) {
           <Link className='add-car' to='/cars/new'>
             Add A Car
           </Link>
-          
         </>
       )}
     </header>

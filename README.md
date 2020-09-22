@@ -112,10 +112,10 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Layout    | functional |   n   |   n   | _The layout will wrap the app._                                  |
+|    Layout    | functional |   n   |   y   | _The layout will wrap the app._                                  |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 |  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|    Sign-up   | functional |   n   |   n   | _The Sign-up contains form for user._                            |
+|    Sign-up   | functional |   y   |   n   | _The Sign-up contains form for user._                            |
 |    Home      | functional |   n   |   n   | _The Home will render the posts using cards in flexbox._         |
 |  Car Card    | functional |   n   |   y   | _The cards will render the car info via props._                  |
 |    Footer    | functional |   n   |   n   | _The footer will show info about EZ-Rentals and copyright._      |
@@ -158,8 +158,55 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+I am really Impressed with my MainContainer Component because it is holding everything my app is running. There is a lot of stuff going on from Backend to Frontend all here in this Component.
+
+```
+export default function MainContainer(props) {
+  const [types, setTypes] = useState([])
+  const [cars, setCars] = useState([])
+  const [vehicles, setVehicles] = useState([])
+  const history = useHistory()
+  const { currentUser } = props
+
+  useEffect(() => {
+    const fetchTypes = async () => {
+      const typeArray = await getAllTypes()
+      setTypes(typeArray)
+    }
+    const fetchCars = async () => {
+      const carArray = await getAllCars()
+      setCars(carArray)
+    }
+    const fetchVehicles = async () => {
+      const vehicleArray = await getAllVehicles()
+      setVehicles(vehicleArray)
+    }
+    fetchTypes()
+    fetchCars()
+    fetchVehicles()
+  }, [])
+
+  const updateSubmit = async (id, formData) => {
+    const updatedCar = await putCar(id, formData)
+    setCars((prevState) =>
+      prevState.map((car) => (car.id === Number(id) ? updatedCar : car))
+    )
+    history.push('/cars')
+  }
+
+  const createSubmit = async (formData) => {
+    const newCar = await postCar(formData)
+    setCars((prevState) => [...prevState, newCar])
+    history.push('/cars')
+  }
+
+  const handleDelete = async (id) => {
+    await deleteCar(id)
+    setCars((prevState) => prevState.filter((car) => car.id !== id))
+  }
+```
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+- _One of the major issues I had was associating my cars and types tables. I resolved it by bringing in a change by creating a new table called vehicles.- 
+
