@@ -40,3 +40,20 @@
     font-size: 25px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .detail-img {
+    width: 100%;
+  }
+  .detail-info {
+    font-size: 25px;
+    top: 55%;
+    left: -15%;
+    width: 60%;
+  }
+  .detail-title {
+    font-size: 30px;
+  }
+  .detail-container {
+    margin-left: 10%;
+  }
+}
