@@ -164,3 +164,4 @@ _**EZ Rentals** is a site where user can explore the cars available to rent. Use
 ## Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution.
+test
